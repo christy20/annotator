@@ -19278,7 +19278,7 @@
             $('#span_highlight_link').hide();
             var firstRadio = $('#span_form input:radio:not([unused]):first')[0];
             if (firstRadio) {
-              firstRadio.checked = true;
+              firstRadio.checked = false;
             } else {
               dispatcher.post('hideForm');
               dispatcher.post('messages', [[['No valid span types defined', 'error']]]);
